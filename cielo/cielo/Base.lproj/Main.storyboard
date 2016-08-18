@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cielo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DVm-yH-Sfo">
+                                <rect key="frame" x="20" y="19" width="288" height="548"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IH3-9V-Bay">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="548"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bte-yo-S2F">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="448"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cielo.png" translatesAutoresizingMaskIntoConstraints="NO" id="muz-Dk-tbc">
+                                                        <rect key="frame" x="0.0" y="-184" width="288" height="428"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="tBY-Xd-Qbw"/>
+                                                            <constraint firstAttribute="width" constant="300" id="y6P-Ps-4ik"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="muz-Dk-tbc" firstAttribute="centerX" secondItem="bte-yo-S2F" secondAttribute="centerX" id="IhH-ql-e10"/>
+                                                    <constraint firstItem="muz-Dk-tbc" firstAttribute="centerY" secondItem="bte-yo-S2F" secondAttribute="centerY" id="PSH-qv-0Ir"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" restorationIdentifier="twitterView" translatesAutoresizingMaskIntoConstraints="NO" id="vbN-be-zlz" userLabel="twitterView">
+                                                <rect key="frame" x="0.0" y="448" width="288" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="twitterView"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="0PW-40-yhD"/>
+                                                    <constraint firstAttribute="height" constant="50" id="yFQ-WF-bow"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoG-sm-ziD">
+                                                <rect key="frame" x="0.0" y="498" width="288" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="yyI-rC-75k"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="R9C-5L-030"/>
+                                            <constraint firstItem="vbN-be-zlz" firstAttribute="leading" secondItem="IH3-9V-Bay" secondAttribute="leading" constant="-15" id="hXZ-4Y-Bx0"/>
+                                            <constraint firstItem="vbN-be-zlz" firstAttribute="centerX" secondItem="IH3-9V-Bay" secondAttribute="centerX" id="kDz-e8-RPH"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IH3-9V-Bay" firstAttribute="centerY" secondItem="DVm-yH-Sfo" secondAttribute="centerY" id="Wr8-aI-MGm"/>
+                                    <constraint firstItem="IH3-9V-Bay" firstAttribute="centerX" secondItem="DVm-yH-Sfo" secondAttribute="centerX" id="uZo-Hu-mDv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DVm-yH-Sfo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FuB-Dt-RJA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DVm-yH-Sfo" secondAttribute="trailing" id="G2Q-nQ-l3F"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DVm-yH-Sfo" secondAttribute="bottom" id="Hch-5q-rFE"/>
+                            <constraint firstItem="DVm-yH-Sfo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Vub-Am-Kqs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DVm-yH-Sfo" secondAttribute="trailing" id="n1C-nJ-vyf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="twitterView" destination="vbN-be-zlz" id="jER-Js-DBl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="406"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cielo.png" width="1000" height="1000"/>
+    </resources>
+</document>
