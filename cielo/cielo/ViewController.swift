@@ -11,7 +11,6 @@ import UIKit
 import Fabric
 import TwitterKit
 
-
 class ViewController: UIViewController {
     
     @IBOutlet var twitterView: UIView!
@@ -19,7 +18,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Swift
         let logInButton = TWTRLogInButton(logInCompletion: { session, error in
             
             if (session != nil) {
@@ -32,22 +30,12 @@ class ViewController: UIViewController {
         
         logInButton.center.x = self.view.center.x  // for horizontal
 
-        
-        
         twitterView.addSubview(logInButton)
-
-//        logInButton.center = self.view.center
-//        
-//        self.view.addSubview(logInButton)
-        
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
