@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Fabric.with([Twitter.self])
-
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         return true
     }
