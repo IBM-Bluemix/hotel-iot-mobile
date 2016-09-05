@@ -12,6 +12,21 @@ class ReservationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let limpet = UIColor(red:0.61, green:0.85, blue:0.85, alpha:1.0)
+        
+        let snorkel = UIColor(red:0.00, green:0.31, blue:0.51, alpha:1.0)
+        
+        let limpetLight = UIColor(red:0.88, green:0.96, blue:0.96, alpha:1.0)
+        
+        navigationController!.navigationBar.barTintColor = snorkel
+        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        tabBarController!.tabBar.barTintColor = limpetLight
+        
+        tabBarController!.tabBar.tintColor = snorkel
+
 
         // Do any additional setup after loading the view.
     }
