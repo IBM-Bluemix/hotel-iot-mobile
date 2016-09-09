@@ -31,6 +31,7 @@
 		22E9756D1D6F8D5600FCB459 /* direction@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E9756C1D6F8D5600FCB459 /* direction@3x.png */; };
 		22E9756F1D79AEAF00FCB459 /* cielo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E9756E1D79AEAF00FCB459 /* cielo.png */; };
 		22E975711D79CF0000FCB459 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E975701D79CF0000FCB459 /* bullet.png */; };
+		22E975731D82453B00FCB459 /* StaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E975721D82453B00FCB459 /* StaysViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		22E9756C1D6F8D5600FCB459 /* direction@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "direction@3x.png"; sourceTree = "<group>"; };
 		22E9756E1D79AEAF00FCB459 /* cielo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cielo.png; sourceTree = "<group>"; };
 		22E975701D79CF0000FCB459 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
+		22E975721D82453B00FCB459 /* StaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaysViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				225A6E6F1D69455F00744546 /* SumaryController.swift */,
 				225A6E721D69F6DC00744546 /* ReservationViewController.swift */,
 				225A6E741D69F72800744546 /* SocialViewController.swift */,
+				22E975721D82453B00FCB459 /* StaysViewController.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E975731D82453B00FCB459 /* StaysViewController.swift in Sources */,
 				225A6E731D69F6DC00744546 /* ReservationViewController.swift in Sources */,
 				22DEEBF91D5FF92C008B5EA9 /* ViewController.swift in Sources */,
 				22DEEBF71D5FF92C008B5EA9 /* AppDelegate.swift in Sources */,

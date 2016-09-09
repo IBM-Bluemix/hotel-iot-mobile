@@ -89,24 +89,34 @@
             </objects>
             <point key="canvasLocation" x="162" y="406"/>
         </scene>
-        <!--Visits-->
-        <scene sceneID="c9G-rk-4bj">
+        <!--Stays-->
+        <scene sceneID="OFa-9e-c1n">
             <objects>
-                <viewController id="uhg-O6-44J" customClass="ReservationViewController" customModule="cielo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XOn-rC-Zn3"/>
-                        <viewControllerLayoutGuide type="bottom" id="6vH-be-lCN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pNg-tL-obT">
+                <tableViewController id="SY8-iw-XGD" customClass="StaysViewController" customModule="cielo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MUx-CS-uMh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Visits" id="2FA-Xk-w7G"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vnf-6g-wYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="visitCell" id="Yjq-xi-itR">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yjq-xi-itR" id="Tpi-Ho-nc8">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SY8-iw-XGD" id="EkL-pJ-deP"/>
+                            <outlet property="delegate" destination="SY8-iw-XGD" id="4Q0-VS-K7l"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Stays" id="Sx0-hR-xrn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hIB-KB-6qS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="720"/>
+            <point key="canvasLocation" x="1616" y="722"/>
         </scene>
         <!--Activity-->
         <scene sceneID="pcv-g5-ekp">
@@ -461,7 +471,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="uhg-O6-44J" kind="relationship" relationship="rootViewController" id="Kvk-xu-cje"/>
+                        <segue destination="SY8-iw-XGD" kind="relationship" relationship="rootViewController" id="UeV-EA-BrI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbZ-AH-omG" userLabel="First Responder" sceneMemberID="firstResponder"/>

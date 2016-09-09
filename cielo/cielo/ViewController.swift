@@ -16,11 +16,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var twitterView: UIView!
     
-    
-    
-
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
