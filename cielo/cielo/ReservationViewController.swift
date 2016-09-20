@@ -24,7 +24,7 @@ class ReservationViewController: UIViewController, UITableViewDelegate, UITableV
         let limpetLight = UIColor(red:0.88, green:0.96, blue:0.96, alpha:1.0)
         
         navigationController!.navigationBar.barTintColor = snorkel
-        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         tabBarController!.tabBar.barTintColor = limpetLight
         
@@ -39,11 +39,11 @@ class ReservationViewController: UIViewController, UITableViewDelegate, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
     

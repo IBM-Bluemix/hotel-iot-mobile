@@ -20,6 +20,18 @@
 		22DEEBFF1D5FF92C008B5EA9 /* cielo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22DEEBFD1D5FF92C008B5EA9 /* cielo.xcdatamodeld */; };
 		22DEEC011D5FF92C008B5EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DEEC001D5FF92C008B5EA9 /* Assets.xcassets */; };
 		22DEEC041D5FF92C008B5EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DEEC021D5FF92C008B5EA9 /* LaunchScreen.storyboard */; };
+		22E290881D84EE35005B4FB9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E290861D84EE35005B4FB9 /* Interface.storyboard */; };
+		22E2908A1D84EE35005B4FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E290891D84EE35005B4FB9 /* Assets.xcassets */; };
+		22E290911D84EE35005B4FB9 /* cielo-wrist Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 22E290901D84EE35005B4FB9 /* cielo-wrist Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22E290981D84EE35005B4FB9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E290971D84EE35005B4FB9 /* InterfaceController.swift */; };
+		22E2909A1D84EE35005B4FB9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E290991D84EE35005B4FB9 /* ExtensionDelegate.swift */; };
+		22E2909C1D84EE35005B4FB9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2909B1D84EE35005B4FB9 /* NotificationController.swift */; };
+		22E2909E1D84EE35005B4FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E2909D1D84EE35005B4FB9 /* Assets.xcassets */; };
+		22E290A21D84EE35005B4FB9 /* cielo-wrist.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 22E290841D84EE35005B4FB9 /* cielo-wrist.app */; };
+		22E290AC1D89FD92005B4FB9 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290AB1D89FD92005B4FB9 /* EstimoteSDK.framework */; };
+		22E290AE1D8AD5DC005B4FB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290AD1D8AD5DC005B4FB9 /* CoreLocation.framework */; };
+		22E290B01D8AD5E5005B4FB9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290AF1D8AD5E5005B4FB9 /* CoreBluetooth.framework */; };
+		22E290B21D8AD5FB005B4FB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290B11D8AD5FB005B4FB9 /* SystemConfiguration.framework */; };
 		22E9755D1D6F7B6E00FCB459 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E9755C1D6F7B6E00FCB459 /* home.png */; };
 		22E9755F1D6F7B7300FCB459 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E9755E1D6F7B7300FCB459 /* home@2x.png */; };
 		22E975611D6F7B7800FCB459 /* home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E975601D6F7B7800FCB459 /* home@3x.png */; };
@@ -33,6 +45,48 @@
 		22E975711D79CF0000FCB459 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E975701D79CF0000FCB459 /* bullet.png */; };
 		22E975731D82453B00FCB459 /* StaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E975721D82453B00FCB459 /* StaysViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22E290921D84EE35005B4FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22DEEBEB1D5FF92C008B5EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E2908F1D84EE35005B4FB9;
+			remoteInfo = "cielo-wrist Extension";
+		};
+		22E290A01D84EE35005B4FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22DEEBEB1D5FF92C008B5EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E290831D84EE35005B4FB9;
+			remoteInfo = "cielo-wrist";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22E290A81D84EE35005B4FB9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				22E290911D84EE35005B4FB9 /* cielo-wrist Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E290AA1D84EE35005B4FB9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				22E290A21D84EE35005B4FB9 /* cielo-wrist.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		225A6E6F1D69455F00744546 /* SumaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumaryController.swift; sourceTree = "<group>"; };
@@ -50,6 +104,21 @@
 		22DEEC001D5FF92C008B5EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22DEEC031D5FF92C008B5EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22DEEC051D5FF92C008B5EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E290841D84EE35005B4FB9 /* cielo-wrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cielo-wrist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E290871D84EE35005B4FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		22E290891D84EE35005B4FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22E2908B1D84EE35005B4FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E290901D84EE35005B4FB9 /* cielo-wrist Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "cielo-wrist Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E290961D84EE35005B4FB9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		22E290971D84EE35005B4FB9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		22E290991D84EE35005B4FB9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		22E2909B1D84EE35005B4FB9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		22E2909D1D84EE35005B4FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22E2909F1D84EE35005B4FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E290AB1D89FD92005B4FB9 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		22E290AD1D8AD5DC005B4FB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		22E290AF1D8AD5E5005B4FB9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		22E290B11D8AD5FB005B4FB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		22E9755C1D6F7B6E00FCB459 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		22E9755E1D6F7B7300FCB459 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
 		22E975601D6F7B7800FCB459 /* home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@3x.png"; sourceTree = "<group>"; };
@@ -62,6 +131,7 @@
 		22E9756E1D79AEAF00FCB459 /* cielo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cielo.png; sourceTree = "<group>"; };
 		22E975701D79CF0000FCB459 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		22E975721D82453B00FCB459 /* StaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaysViewController.swift; sourceTree = "<group>"; };
+		22EA18B61D91A82C0094DB46 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +139,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E290B21D8AD5FB005B4FB9 /* SystemConfiguration.framework in Frameworks */,
+				22E290B01D8AD5E5005B4FB9 /* CoreBluetooth.framework in Frameworks */,
+				22E290AE1D8AD5DC005B4FB9 /* CoreLocation.framework in Frameworks */,
 				22850F241D60242C00B3E6FC /* Fabric.framework in Frameworks */,
+				22E290AC1D89FD92005B4FB9 /* EstimoteSDK.framework in Frameworks */,
 				22850F271D60242C00B3E6FC /* TwitterCore.framework in Frameworks */,
 				22850F251D60242C00B3E6FC /* TwitterKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E2908D1D84EE35005B4FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,11 +192,18 @@
 		22DEEBEA1D5FF92C008B5EA9 = {
 			isa = PBXGroup;
 			children = (
+				22EA18B61D91A82C0094DB46 /* ObjCBridge.h */,
+				22E290B11D8AD5FB005B4FB9 /* SystemConfiguration.framework */,
+				22E290AF1D8AD5E5005B4FB9 /* CoreBluetooth.framework */,
+				22E290AD1D8AD5DC005B4FB9 /* CoreLocation.framework */,
+				22E290AB1D89FD92005B4FB9 /* EstimoteSDK.framework */,
 				22850F201D60242C00B3E6FC /* Fabric.framework */,
 				22850F211D60242C00B3E6FC /* TwitterKit.framework */,
 				22850F221D60242C00B3E6FC /* TwitterKitResources.bundle */,
 				22850F231D60242C00B3E6FC /* TwitterCore.framework */,
 				22DEEBF51D5FF92C008B5EA9 /* cielo */,
+				22E290851D84EE35005B4FB9 /* cielo-wrist */,
+				22E290941D84EE35005B4FB9 /* cielo-wrist Extension */,
 				22DEEBF41D5FF92C008B5EA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				22DEEBF31D5FF92C008B5EA9 /* cielo.app */,
+				22E290841D84EE35005B4FB9 /* cielo-wrist.app */,
+				22E290901D84EE35005B4FB9 /* cielo-wrist Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +233,37 @@
 			path = cielo;
 			sourceTree = "<group>";
 		};
+		22E290851D84EE35005B4FB9 /* cielo-wrist */ = {
+			isa = PBXGroup;
+			children = (
+				22E290861D84EE35005B4FB9 /* Interface.storyboard */,
+				22E290891D84EE35005B4FB9 /* Assets.xcassets */,
+				22E2908B1D84EE35005B4FB9 /* Info.plist */,
+			);
+			path = "cielo-wrist";
+			sourceTree = "<group>";
+		};
+		22E290941D84EE35005B4FB9 /* cielo-wrist Extension */ = {
+			isa = PBXGroup;
+			children = (
+				22E290971D84EE35005B4FB9 /* InterfaceController.swift */,
+				22E290991D84EE35005B4FB9 /* ExtensionDelegate.swift */,
+				22E2909B1D84EE35005B4FB9 /* NotificationController.swift */,
+				22E2909D1D84EE35005B4FB9 /* Assets.xcassets */,
+				22E2909F1D84EE35005B4FB9 /* Info.plist */,
+				22E290951D84EE35005B4FB9 /* Supporting Files */,
+			);
+			path = "cielo-wrist Extension";
+			sourceTree = "<group>";
+		};
+		22E290951D84EE35005B4FB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22E290961D84EE35005B4FB9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,15 +275,51 @@
 				22DEEBF01D5FF92C008B5EA9 /* Frameworks */,
 				22DEEBF11D5FF92C008B5EA9 /* Resources */,
 				22850F1F1D60236D00B3E6FC /* ShellScript */,
+				22E290AA1D84EE35005B4FB9 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22E290A11D84EE35005B4FB9 /* PBXTargetDependency */,
 			);
 			name = cielo;
 			productName = cielo;
 			productReference = 22DEEBF31D5FF92C008B5EA9 /* cielo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		22E290831D84EE35005B4FB9 /* cielo-wrist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E290A91D84EE35005B4FB9 /* Build configuration list for PBXNativeTarget "cielo-wrist" */;
+			buildPhases = (
+				22E290821D84EE35005B4FB9 /* Resources */,
+				22E290A81D84EE35005B4FB9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22E290931D84EE35005B4FB9 /* PBXTargetDependency */,
+			);
+			name = "cielo-wrist";
+			productName = "cielo-wrist";
+			productReference = 22E290841D84EE35005B4FB9 /* cielo-wrist.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		22E2908F1D84EE35005B4FB9 /* cielo-wrist Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E290A71D84EE35005B4FB9 /* Build configuration list for PBXNativeTarget "cielo-wrist Extension" */;
+			buildPhases = (
+				22E2908C1D84EE35005B4FB9 /* Sources */,
+				22E2908D1D84EE35005B4FB9 /* Frameworks */,
+				22E2908E1D84EE35005B4FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cielo-wrist Extension";
+			productName = "cielo-wrist Extension";
+			productReference = 22E290901D84EE35005B4FB9 /* cielo-wrist Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,6 +333,15 @@
 				TargetAttributes = {
 					22DEEBF21D5FF92C008B5EA9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					22E290831D84EE35005B4FB9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					22E2908F1D84EE35005B4FB9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -193,6 +359,8 @@
 			projectRoot = "";
 			targets = (
 				22DEEBF21D5FF92C008B5EA9 /* cielo */,
+				22E290831D84EE35005B4FB9 /* cielo-wrist */,
+				22E2908F1D84EE35005B4FB9 /* cielo-wrist Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +385,23 @@
 				22E975691D6F8D4D00FCB459 /* direction.png in Resources */,
 				22DEEBFC1D5FF92C008B5EA9 /* Main.storyboard in Resources */,
 				22E975671D6F8BFB00FCB459 /* date@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E290821D84EE35005B4FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E2908A1D84EE35005B4FB9 /* Assets.xcassets in Resources */,
+				22E290881D84EE35005B4FB9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E2908E1D84EE35005B4FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E2909E1D84EE35005B4FB9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +438,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22E2908C1D84EE35005B4FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E2909C1D84EE35005B4FB9 /* NotificationController.swift in Sources */,
+				22E2909A1D84EE35005B4FB9 /* ExtensionDelegate.swift in Sources */,
+				22E290981D84EE35005B4FB9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22E290931D84EE35005B4FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E2908F1D84EE35005B4FB9 /* cielo-wrist Extension */;
+			targetProxy = 22E290921D84EE35005B4FB9 /* PBXContainerItemProxy */;
+		};
+		22E290A11D84EE35005B4FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E290831D84EE35005B4FB9 /* cielo-wrist */;
+			targetProxy = 22E290A01D84EE35005B4FB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22DEEBFA1D5FF92C008B5EA9 /* Main.storyboard */ = {
@@ -270,6 +478,14 @@
 				22DEEC031D5FF92C008B5EA9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		22E290861D84EE35005B4FB9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E290871D84EE35005B4FB9 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -371,6 +587,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ibm.com.cielo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/ObjCBridge.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -386,6 +604,72 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ibm.com.cielo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(PROJECT_DIR)/ObjCBridge.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		22E290A31D84EE35005B4FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = cielo_wrist_Extension;
+				INFOPLIST_FILE = "cielo-wrist/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ibm.com.cielo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		22E290A41D84EE35005B4FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = cielo_wrist_Extension;
+				INFOPLIST_FILE = "cielo-wrist/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ibm.com.cielo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		22E290A51D84EE35005B4FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "cielo-wrist Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ibm.com.cielo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		22E290A61D84EE35005B4FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "cielo-wrist Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ibm.com.cielo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
@@ -406,6 +690,24 @@
 			buildConfigurations = (
 				22DEEC091D5FF92C008B5EA9 /* Debug */,
 				22DEEC0A1D5FF92C008B5EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E290A71D84EE35005B4FB9 /* Build configuration list for PBXNativeTarget "cielo-wrist Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E290A51D84EE35005B4FB9 /* Debug */,
+				22E290A61D84EE35005B4FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E290A91D84EE35005B4FB9 /* Build configuration list for PBXNativeTarget "cielo-wrist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E290A31D84EE35005B4FB9 /* Debug */,
+				22E290A41D84EE35005B4FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -25,7 +25,7 @@ class SummaryController: UIViewController {
         let limpetLight = UIColor(red:0.88, green:0.96, blue:0.96, alpha:1.0)
         
         navigationController!.navigationBar.barTintColor = snorkel
-        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         tabBarController!.tabBar.barTintColor = limpetLight
         

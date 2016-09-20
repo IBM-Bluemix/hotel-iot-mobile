@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>cielo-wrist (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>cielo-wrist.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>cielo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>22DEEBF21D5FF92C008B5EA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>22E290831D84EE35005B4FB9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
