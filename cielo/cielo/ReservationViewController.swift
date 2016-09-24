@@ -30,6 +30,9 @@ class ReservationViewController: UIViewController, UITableViewDelegate, UITableV
         
         tabBarController!.tabBar.tintColor = snorkel
 
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+
 
         // Do any additional setup after loading the view.
     }
@@ -38,6 +41,8 @@ class ReservationViewController: UIViewController, UITableViewDelegate, UITableV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func addTapped(){}
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0

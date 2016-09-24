@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22157E531D9471A1008B5E1C /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 22157E521D9471A1008B5E1C /* calendar.png */; };
+		22157E571D973BA6008B5E1C /* luggage.png in Resources */ = {isa = PBXBuildFile; fileRef = 22157E561D973BA6008B5E1C /* luggage.png */; };
 		225A6E701D69455F00744546 /* SumaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E6F1D69455F00744546 /* SumaryController.swift */; };
 		225A6E731D69F6DC00744546 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E721D69F6DC00744546 /* ReservationViewController.swift */; };
 		225A6E751D69F72800744546 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E741D69F72800744546 /* SocialViewController.swift */; };
@@ -44,6 +46,7 @@
 		22E9756F1D79AEAF00FCB459 /* cielo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E9756E1D79AEAF00FCB459 /* cielo.png */; };
 		22E975711D79CF0000FCB459 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E975701D79CF0000FCB459 /* bullet.png */; };
 		22E975731D82453B00FCB459 /* StaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E975721D82453B00FCB459 /* StaysViewController.swift */; };
+		22EA18BA1D92D3D80094DB46 /* NewReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA18B91D92D3D80094DB46 /* NewReservationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22157E521D9471A1008B5E1C /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		22157E561D973BA6008B5E1C /* luggage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luggage.png; sourceTree = "<group>"; };
 		225A6E6F1D69455F00744546 /* SumaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumaryController.swift; sourceTree = "<group>"; };
 		225A6E721D69F6DC00744546 /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		225A6E741D69F72800744546 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +137,7 @@
 		22E975701D79CF0000FCB459 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		22E975721D82453B00FCB459 /* StaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaysViewController.swift; sourceTree = "<group>"; };
 		22EA18B61D91A82C0094DB46 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		22EA18B91D92D3D80094DB46 /* NewReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReservationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,8 @@
 		225A6E6C1D66363400744546 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				22157E561D973BA6008B5E1C /* luggage.png */,
+				22157E521D9471A1008B5E1C /* calendar.png */,
 				22E975701D79CF0000FCB459 /* bullet.png */,
 				22E975621D6F8BF200FCB459 /* date.png */,
 				22E975641D6F8BF700FCB459 /* date@2x.png */,
@@ -185,6 +193,7 @@
 				225A6E721D69F6DC00744546 /* ReservationViewController.swift */,
 				225A6E741D69F72800744546 /* SocialViewController.swift */,
 				22E975721D82453B00FCB459 /* StaysViewController.swift */,
+				22EA18B91D92D3D80094DB46 /* NewReservationViewController.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -333,14 +342,17 @@
 				TargetAttributes = {
 					22DEEBF21D5FF92C008B5EA9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2PMPL6JH3T;
 						LastSwiftMigration = 0800;
 					};
 					22E290831D84EE35005B4FB9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2PMPL6JH3T;
 						LastSwiftMigration = 0800;
 					};
 					22E2908F1D84EE35005B4FB9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2PMPL6JH3T;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -370,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22157E571D973BA6008B5E1C /* luggage.png in Resources */,
 				22850F261D60242C00B3E6FC /* TwitterKitResources.bundle in Resources */,
 				22DEEC041D5FF92C008B5EA9 /* LaunchScreen.storyboard in Resources */,
 				22E975651D6F8BF700FCB459 /* date@2x.png in Resources */,
@@ -379,6 +392,7 @@
 				22DEEC011D5FF92C008B5EA9 /* Assets.xcassets in Resources */,
 				22E975711D79CF0000FCB459 /* bullet.png in Resources */,
 				22E9756D1D6F8D5600FCB459 /* direction@3x.png in Resources */,
+				22157E531D9471A1008B5E1C /* calendar.png in Resources */,
 				22E9755F1D6F7B7300FCB459 /* home@2x.png in Resources */,
 				22E9756B1D6F8D5200FCB459 /* direction@2x.png in Resources */,
 				22E9756F1D79AEAF00FCB459 /* cielo.png in Resources */,
@@ -428,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EA18BA1D92D3D80094DB46 /* NewReservationViewController.swift in Sources */,
 				22E975731D82453B00FCB459 /* StaysViewController.swift in Sources */,
 				225A6E731D69F6DC00744546 /* ReservationViewController.swift in Sources */,
 				22DEEBF91D5FF92C008B5EA9 /* ViewController.swift in Sources */,
@@ -512,6 +527,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2PMPL6JH3T;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -557,6 +573,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2PMPL6JH3T;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
