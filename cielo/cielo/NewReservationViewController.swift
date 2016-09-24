@@ -19,6 +19,9 @@ class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "New Reservation"
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
         hotel.delegate = self
         hotel.dataSource = self
         
@@ -121,7 +124,7 @@ class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPi
         
             let data = pickerData[row]
         
-            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 18.0, weight: UIFontWeightRegular)])
+            let title = NSAttributedString(string: data, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 22.0, weight: UIFontWeightSemibold)])
             label?.attributedText = title
             label?.textAlignment = .center
         return label!

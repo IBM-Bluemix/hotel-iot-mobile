@@ -137,7 +137,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jfe-Jq-CVp">
-                                <frame key="frameInset" minX="79" minY="167" width="300" height="490"/>
+                                <frame key="frameInset" minX="79" minY="167" width="300" height="470"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGd-b3-O9a">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -170,7 +170,7 @@
                                                             <constraint firstAttribute="width" constant="150" id="jTI-WT-cgZ"/>
                                                             <constraint firstAttribute="height" constant="30" id="tUx-Y2-YOS"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                         <color key="textColor" red="0.031372549020000001" green="0.23921568630000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -185,9 +185,10 @@
                                         </constraints>
                                     </stackView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaN-39-R8b">
+                                        <color key="tintColor" red="0.039215686270000001" green="0.23921568630000001" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="cYs-bf-W8Z"/>
-                                            <constraint firstAttribute="height" constant="50" id="zvT-q5-J6S"/>
+                                            <constraint firstAttribute="height" constant="80" id="zvT-q5-J6S"/>
                                         </constraints>
                                     </pickerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1n3-Ge-3JM">
@@ -221,7 +222,7 @@
                                                             <constraint firstAttribute="height" constant="30" id="Om9-gA-IzN"/>
                                                             <constraint firstAttribute="width" constant="150" id="vRa-iw-DMp"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                         <color key="textColor" red="0.031372549019607843" green="0.23921568627450981" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -276,7 +277,7 @@
                                                             <constraint firstAttribute="width" constant="150" id="EN0-c4-hY3"/>
                                                             <constraint firstAttribute="height" constant="30" id="Ro3-6i-kpj"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                         <color key="textColor" red="0.031372549020000001" green="0.23921568630000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -308,35 +309,12 @@
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejf-yk-Ga5">
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q4X-0t-ZGp">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="3IO-AJ-bWs"/>
-                                                    <constraint firstAttribute="width" constant="30" id="iQd-HM-fsB"/>
-                                                </constraints>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Zi-at-rPy">
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBR-wJ-rPE">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="uMe-TQ-MJY"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                                        <color key="textColor" red="0.031372549020000001" green="0.23921568630000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Zi-at-rPy"/>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="q4X-0t-ZGp" firstAttribute="top" secondItem="ejf-yk-Ga5" secondAttribute="top" constant="20" symbolic="YES" id="82x-J0-oOD"/>
                                             <constraint firstAttribute="height" constant="40" id="Sqy-xs-GpK"/>
                                         </constraints>
                                     </stackView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOF-Ag-T40">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="K8F-Dz-vIL"/>
-                                        </constraints>
-                                    </pickerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QH8-ix-BMb">
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -344,6 +322,8 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rut-Vc-dS4">
+                                        <color key="backgroundColor" red="0.039215686274509803" green="0.23921568627450981" blue="0.44705882352941179" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="RESERVE ROOM"/>
                                     </button>
                                 </subviews>
