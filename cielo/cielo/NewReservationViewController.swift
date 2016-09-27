@@ -11,8 +11,60 @@ import UIKit
 class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
 
     @IBOutlet var checkin:UIDatePicker!;
-    @IBOutlet var chekout:UIDatePicker!;
+    @IBOutlet var checkout:UIDatePicker!;
     @IBOutlet weak var hotel:UIPickerView!;
+    
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBAction func reserve(sender: UIButton) {
+    
+        let hotel = pickerData[self.hotel.selectedRow(inComponent: 0)]
+        
+        let checkindate = self.getDate(date: checkin.date);
+        let checkoutdate = self.getDate(date: checkout.date);
+        
+        print(hotel)
+        
+        print(checkindate)
+        print(checkoutdate)
+        
+        let target = "http://127.0.0.1:6024/reservations";
+        
+        let url:URL = URL(string: target)!
+        let session = URLSession.shared
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringCacheData
+        
+        let paramString = "account=" + appDelegate.username + "&hotel=" + hotel + "&checkin=" + checkindate + "&checkout=" + checkoutdate;
+        request.httpBody = paramString.data(using: String.Encoding.utf8)
+        
+        let task = session.dataTask(with: request as URLRequest) {
+            
+            (data, response, error) in
+            
+            guard let data = data, let _:URLResponse = response  , error == nil else {
+                print("error")
+                print(response)
+                return
+            }
+            
+//            let dataString = String(data: data, encoding: String.Encoding.utf8)
+//            
+//            let dictionary = self.convertStringToDictionary(text: dataString!)
+//            
+//            print(dataString)
+//            
+//            print(dictionary)
+        }
+        
+//        self.performSegue(withIdentifier: "beaconsegue", sender: nil)
+        
+        
+        task.resume()
+    }
     
     var pickerData = ["Austin - Hotel Estrella","Barcelona - Hotel Gaudi","Buenos Aires - Hotel Azul","Ottawa - Hotel Rojo","Verona - Hotel Adige"]
     
@@ -70,6 +122,13 @@ class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPi
 
         // Do any additional setup after loading the view.
     }
+    
+    func getDate(date:Date)->String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yy"
+        let dateString = dateFormatter.string(from: date)
+        return dateString;
+    }
 
     func convertStringToDictionary(text: String) -> [String:AnyObject]? {
         if let data = text.data(using: String.Encoding.utf8) {
@@ -112,7 +171,7 @@ class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPi
     }
     
     func updateLabel(){
-        let size = pickerData[hotel.selectedRow(inComponent: 0)]
+        let hotel = pickerData[self.hotel.selectedRow(inComponent: 0)]
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var twitterView: UIView!
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,8 @@ class ViewController: UIViewController {
             if (session != nil) {
                 
                 let account = session!.userName;
+                
+                self.appDelegate.username = account;
                 
                 print("signed in as \(account)");
                 
