@@ -21,6 +21,29 @@ class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPi
     
         let hotel = pickerData[self.hotel.selectedRow(inComponent: 0)]
         
+        var hotelname:String = "";
+        
+        switch hotel{
+            
+            case "Austin - Hotel Estrella":
+                hotelname = "Cielo Estrella"
+            
+            case "Barcelona - Hotel Gaudi":
+                hotelname = "Cielo Gaudi"
+
+            case "Buenos Aires - Hotel Azul":
+                hotelname = "Cielo Azul"
+            
+            case "Ottawa - Hotel Roja":
+                hotelname = "Cielo Roja"
+            
+            case "Verona - Hotel Adige":
+                hotelname = "Cielo Adige"
+            
+            default:
+                hotelname = "Cielo Estrella"
+        }
+        
         let checkindate = self.getDate(date: checkin.date);
         let checkoutdate = self.getDate(date: checkout.date);
         
@@ -38,7 +61,7 @@ class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPi
         request.httpMethod = "POST"
         request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringCacheData
         
-        let paramString = "account=" + appDelegate.username + "&hotel=" + hotel + "&checkin=" + checkindate + "&checkout=" + checkoutdate;
+        let paramString = "account=" + appDelegate.username + "&hotel=" + hotelname + "&checkin=" + checkindate + "&checkout=" + checkoutdate;
         request.httpBody = paramString.data(using: String.Encoding.utf8)
         
         let task = session.dataTask(with: request as URLRequest) {
@@ -66,7 +89,7 @@ class NewReservationViewController: UIViewController,UIPickerViewDataSource,UIPi
         task.resume()
     }
     
-    var pickerData = ["Austin - Hotel Estrella","Barcelona - Hotel Gaudi","Buenos Aires - Hotel Azul","Ottawa - Hotel Rojo","Verona - Hotel Adige"]
+    var pickerData = ["Austin - Hotel Estrella","Barcelona - Hotel Gaudi","Buenos Aires - Hotel Azul","Ottawa - Hotel Roja","Verona - Hotel Adige"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,6 +12,7 @@ class StaysViewController: UITableViewController {
     
     let items = ["We", "Heart", "Swift"]
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,56 @@ class StaysViewController: UITableViewController {
         tabBarController!.tabBar.barTintColor = limpetLight
         
         tabBarController!.tabBar.tintColor = snorkel
+        
+        
+        let target = "http://127.0.0.1:6024/reservations?account=" + appDelegate.username;
+        
+        let url:URL = URL(string: target)!
+        let session = URLSession.shared
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringCacheData
+        
+        let paramString = "account=" + appDelegate.username;
+        request.httpBody = paramString.data(using: String.Encoding.utf8)
+        
+        let task = session.dataTask(with: request as URLRequest) {
+            
+            (data, response, error) in
+            
+            guard let data = data, let _:URLResponse = response  , error == nil else {
+                print("error")
+                print(response)
+                return
+            }
+            
+            let dataString = String(data: data, encoding: String.Encoding.utf8)
+            
+            let dictionary = self.convertStringToDictionary(text: dataString!)
+            
+            print(dataString)
+            
+            print(dictionary)
+        }
+        
+        //        self.performSegue(withIdentifier: "beaconsegue", sender: nil)
+        
+        
+        task.resume()
+
+        
+    }
+    
+    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+        if let data = text.data(using: String.Encoding.utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+            } catch let error as NSError {
+                print(error)
+            }
+        }
+        return nil
     }
     
     override func didReceiveMemoryWarning() {
