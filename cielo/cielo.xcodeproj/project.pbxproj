@@ -10,8 +10,9 @@
 		22157E531D9471A1008B5E1C /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 22157E521D9471A1008B5E1C /* calendar.png */; };
 		22157E571D973BA6008B5E1C /* luggage.png in Resources */ = {isa = PBXBuildFile; fileRef = 22157E561D973BA6008B5E1C /* luggage.png */; };
 		22157E591D98775E008B5E1C /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 22157E581D98775E008B5E1C /* key.png */; };
+		22157E5B1D9C6B19008B5E1C /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22157E5A1D9C6B19008B5E1C /* ReservationTableViewCell.swift */; };
+		22157E5D1D9C99D8008B5E1C /* DigitalKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22157E5C1D9C99D8008B5E1C /* DigitalKeyViewController.swift */; };
 		225A6E701D69455F00744546 /* SumaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E6F1D69455F00744546 /* SumaryController.swift */; };
-		225A6E731D69F6DC00744546 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E721D69F6DC00744546 /* ReservationViewController.swift */; };
 		225A6E751D69F72800744546 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E741D69F72800744546 /* SocialViewController.swift */; };
 		22850F241D60242C00B3E6FC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22850F201D60242C00B3E6FC /* Fabric.framework */; };
 		22850F251D60242C00B3E6FC /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22850F211D60242C00B3E6FC /* TwitterKit.framework */; };
@@ -96,8 +97,9 @@
 		22157E521D9471A1008B5E1C /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		22157E561D973BA6008B5E1C /* luggage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luggage.png; sourceTree = "<group>"; };
 		22157E581D98775E008B5E1C /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		22157E5A1D9C6B19008B5E1C /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
+		22157E5C1D9C99D8008B5E1C /* DigitalKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalKeyViewController.swift; sourceTree = "<group>"; };
 		225A6E6F1D69455F00744546 /* SumaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumaryController.swift; sourceTree = "<group>"; };
-		225A6E721D69F6DC00744546 /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		225A6E741D69F72800744546 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		22850F201D60242C00B3E6FC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		22850F211D60242C00B3E6FC /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
@@ -193,10 +195,11 @@
 			children = (
 				22DEEBF81D5FF92C008B5EA9 /* ViewController.swift */,
 				225A6E6F1D69455F00744546 /* SumaryController.swift */,
-				225A6E721D69F6DC00744546 /* ReservationViewController.swift */,
 				225A6E741D69F72800744546 /* SocialViewController.swift */,
 				22E975721D82453B00FCB459 /* StaysViewController.swift */,
 				22EA18B91D92D3D80094DB46 /* NewReservationViewController.swift */,
+				22157E5A1D9C6B19008B5E1C /* ReservationTableViewCell.swift */,
+				22157E5C1D9C99D8008B5E1C /* DigitalKeyViewController.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -448,12 +451,13 @@
 			files = (
 				22EA18BA1D92D3D80094DB46 /* NewReservationViewController.swift in Sources */,
 				22E975731D82453B00FCB459 /* StaysViewController.swift in Sources */,
-				225A6E731D69F6DC00744546 /* ReservationViewController.swift in Sources */,
+				22157E5D1D9C99D8008B5E1C /* DigitalKeyViewController.swift in Sources */,
 				22DEEBF91D5FF92C008B5EA9 /* ViewController.swift in Sources */,
 				22DEEBF71D5FF92C008B5EA9 /* AppDelegate.swift in Sources */,
 				225A6E751D69F72800744546 /* SocialViewController.swift in Sources */,
 				225A6E701D69455F00744546 /* SumaryController.swift in Sources */,
 				22DEEBFF1D5FF92C008B5EA9 /* cielo.xcdatamodeld in Sources */,
+				22157E5B1D9C6B19008B5E1C /* ReservationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,12 +10,17 @@ import UIKit
 
 class StaysViewController: UITableViewController {
     
-    let items = ["We", "Heart", "Swift"]
+    @IBOutlet weak var table: UITableView!
+    
+    let items = ["Barcelona - Hotel Gaudi", "Ottawa - Hotel Roja", "Verona - Hotel Adige"]
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        table.delegate = self
+        table.dataSource = self
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -107,14 +112,32 @@ class StaysViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "visitCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "visitCell", for: indexPath)as! ReservationTableViewCell
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        // cell.textLabel?.text = self.items[indexPath.row]
         
+        
+        
+        cell.hotelLabel.text = self.items[indexPath.row]
+        cell.hotelLabel.textColor = UIColor(white: 114/255, alpha: 1)
         // Configure the cell...
         
         return cell
     }
+    
+//     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+//        
+//        let row = indexPath.row
+//    }
+//    
+     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: (NSIndexPath!)) {
+        NSLog("You selected cell number: \(indexPath.row)!")
+        
+        
+//        self.performSegueWithIdentifier("toDiagnostics", sender: self)
+    }
+
     
     
     /*
@@ -152,14 +175,15 @@ class StaysViewController: UITableViewController {
      }
      */
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
+
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
+        
+        
+        print("this is a test");
+        
+        
+
      }
-     */
+ 
     
 }
