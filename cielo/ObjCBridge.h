@@ -11,6 +11,7 @@
 
 #import <Fabric/Fabric.h>
 #import <TwitterKit/TwitterKit.h>
-
+#import <EstimoteSDK/EstimoteSDK.h>
+#import <EstimoteSDK/ESTRequestBeaconDetails.h>
 
 #endif /* ObjCBridge_h */

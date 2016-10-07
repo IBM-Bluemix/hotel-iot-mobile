@@ -83,7 +83,7 @@ class ViewController: UIViewController {
         
         customizeButton(button: logInButton)
 
-            twitterView.addSubview(logInButton)
+        twitterView.addSubview(logInButton)
         
     }
     

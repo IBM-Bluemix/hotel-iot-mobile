@@ -12,7 +12,7 @@ import Fabric
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate  {
     
     var window: UIWindow?
     
@@ -20,11 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var lastname:String!
     var username:String!
     
+    let beaconManager = ESTBeaconManager()    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         Fabric.with([Twitter.self])
         UIApplication.shared.statusBarStyle = .lightContent
         
+        
+        ESTConfig.setupAppID( "", andAppToken: "" )
+      
         return true
     }
     

@@ -12,6 +12,8 @@
 		22157E591D98775E008B5E1C /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 22157E581D98775E008B5E1C /* key.png */; };
 		22157E5B1D9C6B19008B5E1C /* ReservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22157E5A1D9C6B19008B5E1C /* ReservationTableViewCell.swift */; };
 		22157E5D1D9C99D8008B5E1C /* DigitalKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22157E5C1D9C99D8008B5E1C /* DigitalKeyViewController.swift */; };
+		22157E921DA5F819008B5E1C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22157E911DA5F819008B5E1C /* CoreFoundation.framework */; };
+		22157E981DA6D3E1008B5E1C /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22157E971DA6D3E1008B5E1C /* EstimoteSDK.framework */; };
 		225A6E701D69455F00744546 /* SumaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E6F1D69455F00744546 /* SumaryController.swift */; };
 		225A6E751D69F72800744546 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225A6E741D69F72800744546 /* SocialViewController.swift */; };
 		22850F241D60242C00B3E6FC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22850F201D60242C00B3E6FC /* Fabric.framework */; };
@@ -32,7 +34,6 @@
 		22E2909C1D84EE35005B4FB9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2909B1D84EE35005B4FB9 /* NotificationController.swift */; };
 		22E2909E1D84EE35005B4FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E2909D1D84EE35005B4FB9 /* Assets.xcassets */; };
 		22E290A21D84EE35005B4FB9 /* cielo-wrist.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 22E290841D84EE35005B4FB9 /* cielo-wrist.app */; };
-		22E290AC1D89FD92005B4FB9 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290AB1D89FD92005B4FB9 /* EstimoteSDK.framework */; };
 		22E290AE1D8AD5DC005B4FB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290AD1D8AD5DC005B4FB9 /* CoreLocation.framework */; };
 		22E290B01D8AD5E5005B4FB9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290AF1D8AD5E5005B4FB9 /* CoreBluetooth.framework */; };
 		22E290B21D8AD5FB005B4FB9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E290B11D8AD5FB005B4FB9 /* SystemConfiguration.framework */; };
@@ -99,6 +100,8 @@
 		22157E581D98775E008B5E1C /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
 		22157E5A1D9C6B19008B5E1C /* ReservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationTableViewCell.swift; sourceTree = "<group>"; };
 		22157E5C1D9C99D8008B5E1C /* DigitalKeyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitalKeyViewController.swift; sourceTree = "<group>"; };
+		22157E911DA5F819008B5E1C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		22157E971DA6D3E1008B5E1C /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 		225A6E6F1D69455F00744546 /* SumaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumaryController.swift; sourceTree = "<group>"; };
 		225A6E741D69F72800744546 /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		22850F201D60242C00B3E6FC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -124,7 +127,6 @@
 		22E2909B1D84EE35005B4FB9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		22E2909D1D84EE35005B4FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E2909F1D84EE35005B4FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22E290AB1D89FD92005B4FB9 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 		22E290AD1D8AD5DC005B4FB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		22E290AF1D8AD5E5005B4FB9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		22E290B11D8AD5FB005B4FB9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -149,11 +151,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22157E921DA5F819008B5E1C /* CoreFoundation.framework in Frameworks */,
 				22E290B21D8AD5FB005B4FB9 /* SystemConfiguration.framework in Frameworks */,
 				22E290B01D8AD5E5005B4FB9 /* CoreBluetooth.framework in Frameworks */,
 				22E290AE1D8AD5DC005B4FB9 /* CoreLocation.framework in Frameworks */,
 				22850F241D60242C00B3E6FC /* Fabric.framework in Frameworks */,
-				22E290AC1D89FD92005B4FB9 /* EstimoteSDK.framework in Frameworks */,
+				22157E981DA6D3E1008B5E1C /* EstimoteSDK.framework in Frameworks */,
 				22850F271D60242C00B3E6FC /* TwitterCore.framework in Frameworks */,
 				22850F251D60242C00B3E6FC /* TwitterKit.framework in Frameworks */,
 			);
@@ -169,6 +172,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22157E901DA5F819008B5E1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22157E911DA5F819008B5E1C /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		225A6E6C1D66363400744546 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,11 +218,11 @@
 		22DEEBEA1D5FF92C008B5EA9 = {
 			isa = PBXGroup;
 			children = (
+				22157E971DA6D3E1008B5E1C /* EstimoteSDK.framework */,
 				22EA18B61D91A82C0094DB46 /* ObjCBridge.h */,
 				22E290B11D8AD5FB005B4FB9 /* SystemConfiguration.framework */,
 				22E290AF1D8AD5E5005B4FB9 /* CoreBluetooth.framework */,
 				22E290AD1D8AD5DC005B4FB9 /* CoreLocation.framework */,
-				22E290AB1D89FD92005B4FB9 /* EstimoteSDK.framework */,
 				22850F201D60242C00B3E6FC /* Fabric.framework */,
 				22850F211D60242C00B3E6FC /* TwitterKit.framework */,
 				22850F221D60242C00B3E6FC /* TwitterKitResources.bundle */,
@@ -220,6 +231,7 @@
 				22E290851D84EE35005B4FB9 /* cielo-wrist */,
 				22E290941D84EE35005B4FB9 /* cielo-wrist Extension */,
 				22DEEBF41D5FF92C008B5EA9 /* Products */,
+				22157E901DA5F819008B5E1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,6 +362,11 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2PMPL6JH3T;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					22E290831D84EE35005B4FB9 = {
 						CreatedOnToolsVersion = 7.3.1;
